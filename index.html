@@ -1,31 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutriged</title>
-    
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nutriged</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .info {
+    width: 100%;
+    border-left: none;
+    border-bottom: 2px solid #004080;
+    padding-left: 0;
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .info img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info p {
+    margin: 10px 0;
+  }
+  .main-content {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .links {
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    margin-left: 0;
+  }
+  .links a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+  }
+  .links ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .links li {
+    margin: 15px 0;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .links .icon {
+    font-size: 1.3em;
+    min-width: 2em;
+    text-align: center;
+  }
+  .blog-box {
+    min-width: 320px;
+    max-width: 400px;
+    background: #f7faff;
+    border: 1px solid #cce0ff;
+    border-radius: 8px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .blog-box h2 {
+    margin-top: 0;
+    color: #004080;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+  }
+  .blog-box a {
+    word-break: break-all;
+    color: #004080;
+    font-weight: bold;
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
-
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <img src="Nutriged.jpg" alt="Nutriged Logo" style="max-width: 300px; width: 100%; height: auto;">
+  <div class="info">
+    <img src="Nutriged.jpg" alt="Logo Nutriged" />
+    <h1>Nutriged</h1>
+    <p>Nutriged es una página dedicada a difundir información de nutrición y su relación con la salud y enfermedad.</p>
+    <p>📱 Teléfono: 9961059072</p>
+  </div>
+  <div class="main-content">
+    <div class="links">
+      <h2>Herramientas y Calculadoras</h2>
+      <ul>
+        <li>
+          <span class="icon">💧</span>
+          <a href="https://01irving-spidy-tasa-de-sudoracin-lkvvjc.streamlit.app/?fbclid=IwY2xjawKivMxleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR5BFHjUIouacnkxa0ThOJQwiVJFrMB2Zncz5Lyc9uOiP7_DA5gyMHZ_Zz0pkw_aem_kIEHreg613vhSoRjYej47w" target="_blank" rel="noopener noreferrer">
+            Tasa de Sudoración
+          </a>
+        </li>
+        <li>
+          <span class="icon">⚡</span>
+          <a href="https://edrmerztugwefaknzq9hwx.streamlit.app/?fbclid=IwY2xjawKivVtleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR7xhImHwv3qP5br_QepOZsf1-0Q2Zz9-JUZebdulAl-TMY1dcbAIKkmRZrh2Q_aem_eJALyGp8w-SifwvE8bsNNA" target="_blank" rel="noopener noreferrer">
+            Calculadora del gasto de energía en 24 h usando la ecuación de Schofield y met´s
+          </a>
+        </li>
+        <li>
+          <span class="icon">🧍‍♂️</span>
+          <a href="https://iqwybb-irving-euan.shinyapps.io/somatotipo/?fbclid=IwY2xjawKivgpleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR4CuyMOtjTXksBZJXKKxjDiHS0kYAOQQkYPXQAU7GIvLrX_9DsuvatTw6T-KA_aem_edhxAMdaZnW4O37IW51OmQ" target="_blank" rel="noopener noreferrer">
+            Calculadora del somatotipo
+          </a>
+        </li>
+        <li>
+          <span class="icon">🤰</span>
+          <a href="https://iqwybb-irving-euan.shinyapps.io/Publicaciones/?fbclid=IwY2xjawKivl9leHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR47vstgVdgrCL4oczr4wO5KGipzWJk8_x7u_r0I6oR0upZE1nF-YwEKSo7Axg_aem_VvB-1V_8EoYWg-TzpsCLpg" target="_blank" rel="noopener noreferrer">
+            Calculo del gasto energético en pacientes embarazadas
+          </a>
+        </li>
+        <li>
+          <span class="icon">📝</span>
+          <a href="https://irvingeuandzulnutricion.blogspot.com/" target="_blank" rel="noopener noreferrer">
+            Blog de Nutrición
+          </a>
+        </li>
+      </ul>
     </div>
-<p>Nutriged es una página dedicada a la difusión de información relacionada con la nutrición humana, en la salud y enfermedad</p>
-<p>
-    <a href="https://irvingeuandzulnutricion.blogspot.com/2025/04/i-nutricion-personalizada-en-obesidad.html?fbclid=IwY2xjawKhsdlleHRuA2FlbQIxMABicmlkETBqNDdmSUlESUNPaTdBWEt4AR7dbkGDglVu0ey18tU4ZG83Sh2xHycY_yB6BEM835sYbPASQXh3MA9nhqF5YQ_aem_hBuJrkuvlug6pu_JKkF-bw" target="_blank">Visita nuestro blog</a>
-</p>
-<ul>
-    <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2F01irving-spidy-tasa-de-sudoracin-lkvvjc.streamlit.app%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBEwajQ3ZklJRElDT2k3QVhLeAEehaISSIom06MRnck1SY3PS86zsNAU2TSIJRllMAKlZkGXYjIi-ZK46taWDzI_aem_nKeJhlGgdeR2xepbk7R14Q&h=AT2cT2zlKXgAAwdWUS1Y0VhtnT48EGBWEoPEjZ4dOqZeFbhe2ZrY1H5mAWJUwjtjPn3GfOjiyLmRspaLPozJ5qj5d65tFSQY0lWXnXSPQmnPm0vocM05wXBMj5xgLF5cfFAEz3MgcyP9tlQ7NVWtSe2o2A6lTiEc&__tn__=-UK-R&c[0]=AT1cCN3fFXEK0hfWIBGr9GEhD2OP9DX-00K6jhZYxRnUK9deZVNyZxhcypkqbHOhemNqqY2-tlPoU00Hl2o_lPReNERgYHnvzR_ZeeMqoUczm5RZ445nvgnky2ZAHsQ_g1W7QIM9hEx3lFW7sfTk0B7BqnGJuHq_j4fu8bpkdjIrXiDwl2eWhsvf8lhdqQEmxItMw-U4XnvKDVvKmTXYe4nK1Mw" target="_blank">Calculadora de tasa de sudor</a></li>
-    
-
-    </a></li>
-</ul>
- </body>
-
-        
-<html>
-    </a></li>
-</ul>
+    <div class="blog-box">
+      <h2>Blog</h2>
+      <a href="https://irvingeuandzulnutricion.blogspot.com/" target="_blank" rel="noopener noreferrer">
+        https://irvingeuandzulnutricion.blogspot.com/
+      </a>
+    </div>
+  </div>
 </body>
 </html>
