@@ -1,140 +1,117 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Nutriged</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-  .info {
-    width: 100%;
-    border-left: none;
-    border-bottom: 2px solid #004080;
-    padding-left: 0;
-    padding-bottom: 20px;
-    font-size: 1.1em;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .info img {
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .info p {
-    margin: 10px 0;
-  }
-  .main-content {
-    display: flex;
-    width: 100%;
-    max-width: 1100px;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-  }
-  .links {
-    width: 100%;
-    max-width: 700px;
-    text-align: left;
-    margin-left: 0;
-  }
-  .links a {
-    text-decoration: none;
-    color: #004080;
-    font-weight: bold;
-  }
-  .links ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  .links li {
-    margin: 15px 0;
-    font-size: 1.1em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .links .icon {
-    font-size: 1.3em;
-    min-width: 2em;
-    text-align: center;
-  }
-  .blog-box {
-    min-width: 320px;
-    max-width: 400px;
-    background: #f7faff;
-    border: 1px solid #cce0ff;
-    border-radius: 8px;
-    padding: 18px 20px;
-    box-sizing: border-box;
-    margin-top: 10px;
-  }
-  .blog-box h2 {
-    margin-top: 0;
-    color: #004080;
-    font-size: 1.2em;
-    margin-bottom: 12px;
-  }
-  .blog-box a {
-    word-break: break-all;
-    color: #004080;
-    font-weight: bold;
-    text-decoration: none;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutriged - Nutrición y Salud Especializada</title>
+    <meta name="description" content="Nutrición especializada para tu salud y bienestar. Herramientas, calculadoras y blog de nutrición.">
+    <meta name="keywords" content="nutrición, salud, calculadoras nutricionales, dieta, bienestar">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="info">
-    <img src="Nutriged.jpg" alt="Logo Nutriged" />
-    <h1>Nutriged</h1>
-    <p>Nutriged es una página dedicada a difundir información de nutrición y su relación con la salud y enfermedad.</p>
-    <p>📱 Teléfono: 9961059072</p>
-  </div>
-  <div class="main-content">
-    <div class="links">
-      <h2>Herramientas y Calculadoras</h2>
-      <ul>
-        <li>
-          <span class="icon">💧</span>
-          <a href="https://01irving-spidy-tasa-de-sudoracin-lkvvjc.streamlit.app/?fbclid=IwY2xjawKivMxleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR5BFHjUIouacnkxa0ThOJQwiVJFrMB2Zncz5Lyc9uOiP7_DA5gyMHZ_Zz0pkw_aem_kIEHreg613vhSoRjYej47w" target="_blank" rel="noopener noreferrer">
-            Tasa de Sudoración
-          </a>
-        </li>
-        <li>
-          <span class="icon">⚡</span>
-          <a href="https://edrmerztugwefaknzq9hwx.streamlit.app/?fbclid=IwY2xjawKivVtleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR7xhImHwv3qP5br_QepOZsf1-0Q2Zz9-JUZebdulAl-TMY1dcbAIKkmRZrh2Q_aem_eJALyGp8w-SifwvE8bsNNA" target="_blank" rel="noopener noreferrer">
-            Calculadora del gasto de energía en 24 h usando la ecuación de Schofield y met´s
-          </a>
-        </li>
-        <li>
-          <span class="icon">🧍‍♂️</span>
-          <a href="https://iqwybb-irving-euan.shinyapps.io/somatotipo/?fbclid=IwY2xjawKivgpleHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR4CuyMOtjTXksBZJXKKxjDiHS0kYAOQQkYPXQAU7GIvLrX_9DsuvatTw6T-KA_aem_edhxAMdaZnW4O37IW51OmQ" target="_blank" rel="noopener noreferrer">
-            Calculadora del somatotipo
-          </a>
-        </li>
-        <li>
-          <span class="icon">🤰</span>
-          <a href="https://iqwybb-irving-euan.shinyapps.io/Publicaciones/?fbclid=IwY2xjawKivl9leHRuA2FlbQIxMABicmlkETA0WWxpZ1FvYWpzQ0NVaWh4AR47vstgVdgrCL4oczr4wO5KGipzWJk8_x7u_r0I6oR0upZE1nF-YwEKSo7Axg_aem_VvB-1V_8EoYWg-TzpsCLpg" target="_blank" rel="noopener noreferrer">
-            Calculo del gasto energético en pacientes embarazadas
-          </a>
-        </li>
-        </ul>
-    </div>
-    <div class="blog-box">
-      <h2>Blog</h2>
-      <a href="https://irvingeuandzulnutricion.blogspot.com/" target="_blank" rel="noopener noreferrer">
-        https://irvingeuandzulnutricion.blogspot.com/
-      </a>
-    </div>
-  </div>
+    <header class="main-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <img src="Nutriged.jpg" alt="Logo Nutriged - Nutrición y Salud Especializada" class="header-logo" width="120" height="120">
+                <div class="header-text">
+                    <h1>Nutriged</h1>
+                    <p class="tagline">Nutrición especializada para tu salud y bienestar</p>
+                </div>
+            </div>
+            
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#herramientas">Herramientas</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="blog">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Descubre nuestro Blog de Nutrición</h2>
+                    <p>Artículos especializados, consejos prácticos y las últimas investigaciones</p>
+                    <a href="https://irvingeuandzulnutricion.blogspot.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visitar Blog</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tools-section" id="herramientas">
+            <div class="container">
+                <h2 class="text-center">Herramientas y Calculadoras</h2>
+                <div class="tools-grid">
+                    <a href="https://01irving-spidy-tasa-de-sudoracin-lkvvjc.streamlit.app/" target="_blank" rel="noopener noreferrer" class="tool-card">
+                        <span class="icon" aria-hidden="true">💧</span>
+                        <div>
+                            <h3>Tasa de Sudoración</h3>
+                            <p>Calcula tu tasa de sudoración durante la actividad física</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://edrmerztugwefaknzq9hwx.streamlit.app/" target="_blank" rel="noopener noreferrer" class="tool-card">
+                        <span class="icon" aria-hidden="true">⚡</span>
+                        <div>
+                            <h3>Gasto Energético 24h</h3>
+                            <p>Ecuación de Schofield y METs</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://iqwybb-irving-euan.shinyapps.io/somatotipo/" target="_blank" rel="noopener noreferrer" class="tool-card">
+                        <span class="icon" aria-hidden="true">🧍‍♂️</span>
+                        <div>
+                            <h3>Calculadora de Somatotipo</h3>
+                            <p>Determina tu tipo corporal</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://iqwybb-irving-euan.shinyapps.io/Publicaciones/" target="_blank" rel="noopener noreferrer" class="tool-card">
+                        <span class="icon" aria-hidden="true">🤰</span>
+                        <div>
+                            <h3>Gasto Energético en Embarazo</h3>
+                            <p>Cálculo para pacientes embarazadas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-section" id="contacto">
+            <div class="container">
+                <div class="contact-card">
+                    <h2 class="text-center">Contacto</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="icon" aria-hidden="true">📱</span>
+                            <span>Teléfono: <a href="tel:+529961059072">996 105 9072</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon" aria-hidden="true">📧</span>
+                            <span>Email: <a href="mailto:Nutriged01@gmail.com">Nutriged01@gmail.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <p class="text-center">&copy; <span id="year"></span> Nutriged - Todos los derechos reservados</p>
+            <p class="text-center">Sitio web creado por el equipo Nutriged</p>
+        </div>
+    </footer>
+
+    <script>
+        // Año actual para el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
